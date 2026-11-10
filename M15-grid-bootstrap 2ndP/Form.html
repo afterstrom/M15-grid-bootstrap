@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulari</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #e0d3c3;
+        }
+    </style>
+</head>
+<body>
+
+<!-- navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="index.html">El meu projecte</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">Inici</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" href="Form.html">Formulari</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="container mt-4">
+  <div class="row justify-content-center">
+    <div class="col-md-6">
+
+      <h2 class="text-center mb-4">Formulari de contacte</h2>
+
+      <form id="formulari">
+
+        <div class="mb-3">
+          <label for="nom" class="form-label">Nom</label>
+          <input type="text" class="form-control" id="nom" name="nom" required>
+        </div>
+
+        <div class="mb-3">
+          <label for="cognoms" class="form-label">Cognoms</label>
+          <input type="text" class="form-control" id="cognoms" name="cognoms" required>
+        </div>
+
+        <div class="mb-3">
+          <label for="naixement" class="form-label">Data de naixement</label>
+          <input type="date" class="form-control" id="naixement" name="naixement" required>
+        </div>
+
+        <div class="mb-3">
+          <label for="correu" class="form-label">Correu electrònic</label>
+          <input type="email" class="form-control" id="correu" name="correu" placeholder="nom@exemple.com" required>
+        </div>
+
+        <div class="mb-3">
+          <label class="form-label">Gènere</label><br>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="genere" id="home" value="home" required>
+            <label class="form-check-label" for="home">Home</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="genere" id="dona" value="dona" required>
+            <label class="form-check-label" for="dona">Dona</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="genere" id="nodefinit" value="no definit" required>
+            <label class="form-check-label" for="nodefinit">No definit</label>
+          </div>
+        </div>
+
+        <div class="mb-3">
+          <label for="tipus" class="form-label">Tipus d'informació</label>
+          <select class="form-select" id="tipus" name="tipus" required>
+            <option value="">Selecciona el tipus d'informació</option>
+            <option value="cricket">Cricket</option>
+            <option value="informatica">Informàtica</option>
+            <option value="viatjar">Viatjar</option>
+          </select>
+        </div>
+
+        <div class="mb-3">
+          <label for="comentaris" class="form-label">Comentaris</label>
+          <textarea class="form-control" id="comentaris" name="comentaris" rows="4" placeholder="Escriu aquí..." required></textarea>
+        </div>
+
+        <div class="text-end mb-4">
+          <button type="submit" class="btn btn-primary">Guardar</button>
+        </div>
+
+      </form>
+
+    </div>
+  </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
